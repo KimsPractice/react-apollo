@@ -8,6 +8,7 @@ const Container = styled.div`
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   overflow: visible;
   border-radius: 7px;
+  background-color: white;
 `;
 
 const Poster = styled.div`
