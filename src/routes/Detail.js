@@ -50,6 +50,9 @@ const Poster = styled.div`
   width: 25%;
   height: 60%;
   background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
   margin-right: 0;
 `;
 
