@@ -3,13 +3,13 @@ import ApolloClient from "apollo-boost";
 const client = new ApolloClient({
   uri: "http://localhost:4000",
   resolvers: {
-    Movies: { isLiked: () => false },
+    Movie: { isLiked: () => false },
     Mutation: {
-      likeMovie: (_, { id }, { cache }) => {
+      toggleLikeMovie: (_, { id, isLiked }, { cache }) => {
         cache.writeData({
-          id: `Movies:${id}`,
+          id: `Movie:${id}`,
           data: {
-            isLiked: true,
+            isLiked: !isLiked,
           },
         });
       },

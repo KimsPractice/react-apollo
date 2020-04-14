@@ -60,6 +60,7 @@ const GET_MOVIES = gql`
 
 export default () => {
   const { loading, data } = useQuery(GET_MOVIES);
+  console.log(data);
 
   return (
     <Container>
